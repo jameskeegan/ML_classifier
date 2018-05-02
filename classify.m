@@ -3,7 +3,6 @@ function [classname] = classify(imagepath)
     load('models');
     %Assume all models use the same number of features
     N = length(models(1).mean);
-    imagepath
     features = getFeatures(imagepath, N);
     maxscore = -inf;
     %Find out which class has the highest score

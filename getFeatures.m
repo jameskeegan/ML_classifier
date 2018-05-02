@@ -1,7 +1,6 @@
 function [features] = getFeatures(imagePath, N)
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
-imagePath
 im = imread(imagePath);
 
 % gets chain code of the image

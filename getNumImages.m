@@ -1,6 +1,5 @@
-function numImages = getNumImages(imagedir)
-    verifyImageDir(imagedir)
-    
-    imagelist = dir(sprintf('%s/*.gif', imagedir));
+function numImages = getNumImages(imagedirtest)
+    verifyImageDir(imagedirtest);
+    imagelist = dir(sprintf('%s/*.gif', imagedirtest));
     numImages = length(imagelist);
 end
