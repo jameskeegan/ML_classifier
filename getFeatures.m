@@ -6,6 +6,7 @@ im = imread(imagePath);
 % gets chain code of the image
 c = chainCode(im);
 
+%angles = c;
 angles = c(3,:)*(2*pi/8);
 anglesFFT = abs(fft(angles)); %fast fourier transform
 

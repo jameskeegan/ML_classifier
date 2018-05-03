@@ -15,3 +15,6 @@ ylabel('Accuracy (in %)') % y-axis label
 
 
 % for orig -- peaks at 5,6 (81.9005); levels off at 44.7964% at 50
+
+% for no angles -- peaks at 12, 16, 17, 18 (88.6878); doesn't really level
+% off now

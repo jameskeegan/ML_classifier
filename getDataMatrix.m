@@ -1,7 +1,7 @@
 function D = getDataMatrix(imagedir, class, N)
     verifyImageDir(imagedir);
     imagelist = dir(sprintf('%s/%s*.gif', imagedir, class));
-    if length(imagelist) == 0
+    if isempty(imagelist)
         error('No images for class');
     end
     D = zeros(length(imagelist), N);

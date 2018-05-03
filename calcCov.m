@@ -17,7 +17,5 @@ function [ C2 ] = calcCov( dataMatrix )
        end
    end
    
-   % (1/(m-1)) * 
    C2 = C2/(m-1);
 end
-
